@@ -1,0 +1,115 @@
+.resumePage {
+    margin: 0 21%;
+    margin-top: 2.5%;
+    font-size: 1.05rem;
+    padding-bottom: 5vh;
+}
+.resumePage h1 {
+    margin-bottom: 1.1rem;
+    margin-top: 0rem;
+    text-align: center;
+}
+
+.mainContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5%;
+    flex: 1 1 0;
+}
+
+.section1,
+.section2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex: 1 1 0;
+    gap: 2.5vw;
+}
+.container {
+    flex: 1 1 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1.1em;
+}
+.container h2 {
+    font-size: 1.7rem;
+    text-align: left;
+}
+.container h3 {
+    font-size: 1em;
+}
+
+.subheading {
+    font-size: 0.8em;
+}
+.passingYear, .duration {
+    font-size: 0.75em;
+    padding-bottom: 0.6em;
+}
+.companyLink{
+     padding-bottom: 0em;
+}
+.projectLink {
+    padding-bottom: 0.6em;
+}
+
+.projectLink a,.companyLink a {
+    text-decoration: none;
+    color: #9c9c9c;
+}
+.projectLink a:hover,.companyLink a:hover {
+    background: -webkit-linear-gradient(
+        45deg,
+        rgba(128, 231, 96, 0.924),
+        rgba(85, 183, 232, 0.883)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.remark {
+    font-size: 0.9em;
+}
+.educationRemark{
+    font-size: 0.85em;
+}
+.education:hover h2,
+.projects:hover h2,
+.por:hover h2,
+.technicalSkills:hover h2 {
+    background: -webkit-linear-gradient(
+        45deg,
+        rgb(229, 231, 96),
+        rgb(255, 161, 193)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skills {
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 1200px) {
+    .resumePage {
+        margin: 0 10%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .resumePage {
+        margin: 0 6%;
+    }
+    .mainContainer {
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex: 1 1 0;
+        gap: 5vw;
+    }
+}

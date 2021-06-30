@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    display: block;
+    margin: 0 22%;
+    margin-top: 2.5%;
+    font-size: 1.05rem;
+    text-align: justify;
+}
+.page h1 {
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+    text-align: center;
+}
+
+.pagenotfound {
+    margin-top: 2.5%;
+    text-align: center;
+}
+
+.pagenotfound h1 {
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+}
+.pagenotfound a {
+    padding-top: 2rem;
+    text-decoration: none;
+    color: #9c9c9c;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.home {
+    padding-bottom: 20vh;
+    height: 90vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+}
+.aboutPage h2 {
+    text-align: left;
+}
+.aboutPage p {
+    padding-top: 0.8em;
+}
+#subtitle::before {
+    content: '';
+    animation: blinkingText 4s infinite;
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 1rem;
+
+    /* to give the gradient color*/
+    background: -webkit-linear-gradient(
+        45deg,
+        rgba(128, 231, 96, 0.924),
+        rgba(85, 183, 232, 0.883)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* overflow: hidden; */
+    transform-style: preserve-3d;
+}
+@keyframes blinkingText {
+    0% {
+        content: 'Programmer';
+        opacity: 0;
+    }
+    5% {
+        content: 'Programmer';
+        opacity: 0;
+    }
+    25% {
+        content: 'Programmer';
+        opacity: 1;
+    }
+    45% {
+        content: 'Programmer';
+        opacity: 0;
+    }
+    50% {
+        content: 'Developer';
+        opacity: 0;
+    }
+    55% {
+        content: 'Developer';
+        opacity: 0;
+    }
+    75% {
+        content: 'Developer';
+        opacity: 1;
+    }
+    95% {
+        content: 'Developer';
+        opacity: 0;
+    }
+    100% {
+        content: 'Programmer';
+        opacity: 0;
+    }
+}
+.info {
+    font-size: 1em;
+    padding-top: 1rem;
+}
+
+.info p {
+    padding-bottom: 0.5em;
+}
+
+.info a {
+    text-decoration: none;
+    color: rgb(94, 94, 94);
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(94, 94, 94);
+    font-weight: 500;
+}
+.info a:hover,
+.name h1,
+.page h1,
+.blogPage:hover .link,
+.pagenotfound:hover a {
+    background: -webkit-linear-gradient(
+        45deg,
+        rgb(96, 193, 231),
+        rgb(85, 219, 114)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+    .page {
+        margin: 0 6%;
+        font-size: 0.9rem;
+        margin-top: 2.5%;
+    }
+    .pagenotfound {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,150 @@
+.mainContactPage {
+    margin: 0 18%;
+    margin-top: 2.5%;
+    font-size: 1.05rem;
+    padding-bottom: 5vh;
+}
+.mainContactPage h1 {
+    margin-bottom: 1.1rem;
+    margin-top: 0rem;
+    text-align: center;
+}
+
+.contactPage {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 6%;
+    flex: 1 1 0;
+}
+.contactPage h1 {
+    margin-bottom: 1.1rem;
+    margin-top: 0rem;
+    text-align: center;
+}
+.contact,
+.contactForm {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8vh;
+    /* flex: 1 1 0; */
+}
+.contact h4 {
+    font-weight: 500;
+}
+.subtitle {
+    font-size: 0.9em;
+}
+
+.contact h2,
+.contactForm h2 {
+    font-size: 1.4rem;
+    padding-bottom: 0.3em;
+}
+.contact p {
+    /* font-size:0.9rem; */
+    padding-bottom: 0.8em;
+}
+textarea {
+    color: rgb(26, 26, 26);
+    width: 45ch;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    resize: none;
+    margin-bottom: 1rem;
+}
+input {
+    color: rgb(26, 26, 26);
+    font-size: 0.9rem;
+    width: 80%;
+    margin-bottom: 1rem;
+    padding: 0.35rem;
+}
+::placeholder {
+    color: rgb(143, 143, 143);
+}
+.btn {
+    width: auto;
+    border: 1px solid rgba(0, 0, 0, 0.541);
+    font-size: 0.9rem;
+    padding: 0.35rem 0.8rem;
+    border-radius: 2px;
+    background-color: rgba(240, 240, 240, 0.52);
+}
+.btn:hover {
+    /* font-size: 1.1rem; */
+    background-color: rgba(204, 204, 204, 0.801);
+    cursor: pointer;
+}
+.socialMediaPlatforms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.socialMediaPlatforms a {
+    padding: 0;
+}
+.socialMediaPlatforms a:hover {
+    background: -webkit-linear-gradient(
+        45deg,
+        rgba(128, 231, 96, 0),
+        rgba(154, 255, 196, 0.171)
+    );
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+}
+
+.getInTouchContactForm:hover h2,
+.getInTouch:hover h2,
+.platforms:hover h2,
+.aboutPage:hover h2,
+.blogPage:hover .info {
+    background: -webkit-linear-gradient(
+        45deg,
+        rgb(229, 231, 96),
+        rgb(255, 161, 193)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 800px) {
+    .mainContactPage {
+        margin: 0 7%;
+        margin-top: 2.5%;
+        font-size: 1.05rem;
+        padding-bottom: 5vh;
+    }
+    .contact {
+        justify-content: center;
+        gap: 2rem;
+    }
+    .contactPage {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .socialMediaPlatforms {
+        justify-content: flex-start;
+        padding: 0;
+    }
+    textarea {
+        width: 80vw;
+        margin-bottom: 0.5rem;
+        /* letter-spacing: -1px; */
+    }
+    input {
+        width: 85%;
+        margin-bottom: 0.5rem;
+    }
+    .contact h2 {
+        padding-bottom: 0;
+    }
+}
