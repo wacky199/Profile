@@ -5,7 +5,7 @@ import CancelIcon from '@material-ui/icons/Cancel';
 import { SidebarData } from '../data/SidebarData';
 import { Theme } from './Theme';
 import { ThemeProvider } from '@material-ui/core';
-import Logo from '../images/mylogo.png';
+import Logo from '../images/navLogo.png';
 import SocialMediaHandle from './SocialMediaHandle';
 
 
@@ -28,7 +28,7 @@ const Navbar = () => {
                             </li>
                             <div className="introMobile">
                                 <div className="logo">
-                                    <img src={Logo} alt="logo" />
+                                    <img src={Logo} alt="logo" className="clipLogo" />
                                 </div>
                                 <div className="intro">
                                     <h1>Shivam</h1>

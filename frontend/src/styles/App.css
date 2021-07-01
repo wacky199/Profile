@@ -8,10 +8,11 @@
     display: block;
     margin: 0 22%;
     margin-top: 2.5%;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     text-align: justify;
 }
 .page h1 {
+    font-size: 2.2em;
     margin-bottom: 1rem;
     margin-top: 0rem;
     text-align: center;
@@ -46,7 +47,7 @@
 }
 
 .home h1 {
-    font-size: 3em;
+    font-size: 3rem;
     margin-bottom: 0;
 }
 .aboutPage h2 {

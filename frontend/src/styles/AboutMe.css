@@ -1,0 +1,31 @@
+.aboutMeIntro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom:1rem;
+}
+
+.aboutMeImg img {
+    height: 26vh;
+}
+
+.idea {
+    font-size: 1.3rem;
+    text-align: left;
+    padding-right: 20%;
+    background: -webkit-linear-gradient(
+        45deg,
+        rgb(216, 74, 74),
+        rgb(255, 195, 160)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1200px) {
+    .aboutMeIntro {
+        margin-left: 10%;
+    }
+}

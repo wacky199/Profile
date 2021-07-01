@@ -29,6 +29,9 @@ body {
     width: 55%;
     margin-bottom: 1rem;
 }
+.clipLogo{
+    clip-path: circle(50% at 50% 50%);
+}
 
 .intro {
     padding-bottom: 2rem;

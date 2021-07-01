@@ -11,6 +11,7 @@ import './styles/App.css'
 import './styles/Navbar.css';
 import './styles/contact.css'
 import './styles/Resume.css'
+import './styles/AboutMe.css'
 const App = () => {
     return (
         <div className="App">
