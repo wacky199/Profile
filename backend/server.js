@@ -4,12 +4,13 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const ProfileMessage = require('./ProfileMessagesSchema.js');
 
+app.use(express.static('public'));
+
 require('dotenv').config();
 const port =
     process.env.NODE_ENV === 'development'
         ? process.env.DEV_PORT
         : process.env.PORT;
-
 
 mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
@@ -60,6 +61,9 @@ app.post('/contact/messages', (req, res) => {
     });
 });
 
+app.get('/', (req, res) => {
+    res.sendFile('index.html');
+});
 app.get('/contact/messages', (req, res) => {
     res.json(temp);
 });

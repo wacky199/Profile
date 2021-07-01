@@ -4,7 +4,7 @@ import swal from 'sweetalert';
 import validator from 'validator';
 
 const ContactForm = () => {
-    const url = `http://localhost:5000/contact/messages`;
+    const url = `/contact/messages`;
 
     const [data, setData] = useState({
         name: '',
